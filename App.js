@@ -162,6 +162,10 @@ import JobConsultancyScreen from "./screens/services/JobConsultancyScreen";
 import EFormFillupScreen from "./screens/services/EFormFillupScreen";
 import SignUpScreen from "./screens/SignUpScreen";
 import LoginScreen from "./screens/LoginScreen";
+import AboutUs from "./screens/profile/AboutUs.js";
+import PrivacyPolicy from "./screens/profile/PrivacyPolicy";
+import ContactUs from "./screens/profile/ContactUs";
+
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
@@ -182,6 +186,12 @@ function ProfileStackNavigator() {
         <Drawer.Screen name="Profile" component={ProfileScreen} />
         <Drawer.Screen name="SignUp" component={SignUpScreen} />
         <Drawer.Screen name="Login" component={LoginScreen} />
+        <Drawer.Screen name="About Us" component={AboutUs} />
+        <Drawer.Screen name="Privacy Policy" component={PrivacyPolicy} />
+        <Drawer.Screen name="Contact Us" component={ContactUs} />
+        
+
+
       </Drawer.Navigator>
   
   );
